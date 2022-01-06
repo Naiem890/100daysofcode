@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Manrope&family=Poppins:wght@400;500;600;700&family=Yatra+One&family=Yeseva+One&display=swap");
+
+:root {
+  /*---------- Colors --------- */
+
+  --mainColor: #ff5959;
+  --mainColorShade: #ffacac;
+  --secondaryColor: #2fa2f3;
+  --secondaryColorDark: #2a92db;
+  --black1: #000000;
+  --black2: #333333;
+  --gray1: #3e3e3e;
+  --gray2: #424242;
+
+  /*---------- Fonts --------- */
+
+  --Poppins: "Poppins", sans-serif;
+  --YesevaOne: "Yeseva One", cursive;
+}
+
+/* ========================================= */
+/* =========== Global Settings ============ */
+/* ========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--Poppins);
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+/* ========================================= */
+/* =========== Reuseable Codes ============ */
+/* ========================================= */
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+  /* background-color: violet; */
+}
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  border-radius: 5px;
+  background-color: var(--secondaryColor);
+  color: white;
+  text-decoration: none;
+  padding: 1.2rem 3.2rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 128.7%;
+  transition: all 0.2s ease-in;
+}
+.btn:hover {
+  background-color: var(--secondaryColorDark);
+}
+.clr-main {
+  display: in;
+  color: var(--mainColor);
+}
+.clr-secondary {
+  color: var(--secondaryColor);
+}
+h1 {
+  font-weight: 400;
+  font-size: 6rem;
+  color: var(--black2);
+  line-height: 8rem;
+  font-family: "Yatra One", cursive;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+h1::before {
+  content: "";
+  height: 80%;
+  width: 5px;
+  border-radius: 20px;
+  background: var(--secondaryColor);
+  display: block;
+  position: absolute;
+  left: 0;
+}
+h2 {
+  font-family: var(--Poppins);
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 7rem;
+  text-align: center;
+}
+h3 {
+  font-family: var(--Poppins);
+  font-size: 3.6rem;
+  line-height: auto;
+  font-weight: 700;
+}
+h4 {
+  font-family: var(--Poppins);
+  font-size: 2.4rem;
+  line-height: auto;
+  font-weight: 600;
+}
+/* ========================================= */
+/* =========== Hero Section ============ */
+/* ========================================= */
+
+.section-hero .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: space-between;
+  align-items: center;
+  height: 85vh;
+  column-gap: 10rem;
+}
+.hero-text {
+  margin: 1.6rem 0;
+  color: var(--gray1);
+  line-height: 2.8rem;
+  font-size: 1.8rem;
+}
+.hero-image-box {
+  justify-self: end;
+}
+
+.hero-text-box p:last-child {
+  font-size: 1.6rem;
+  color: var(--gray2);
+  margin-top: 3.2rem;
+}
+/* ========================================= */
+/* =========== Mission Section ============ */
+/* ========================================= */
+
+.section-mission {
+  margin-top: 4.8rem;
+}
+.section-mission .container {
+  margin-top: 4.8rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2.4rem;
+}
+.mission {
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  border-radius: 2.4rem;
+}
+.mission-text {
+  color: var(--gray2);
+  font-size: 1.6rem;
+}
+.section-mission .mission:nth-child(1) {
+  background-color: #eef6f7;
+}
+.section-mission .mission:nth-child(2) {
+  background-color: #ffefef;
+}
+.section-mission .mission:nth-child(3) {
+  background-color: #fff4d6;
+}
+/* ========================================= */
+/* =========== Feature Section ============ */
+/* ========================================= */
+
+.section-features {
+  margin: 8.6rem 0rem;
+}
+.section-features .container {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}
+
+.section-features .feature:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.feature-1 .feature-image-box {
+  /* background-image: url("images/featrue1.png"); */
+  background-color: yellow;
+  border-radius: 2.4rem;
+  width: 40rem;
+  height: 40rem;
+  background-size: cover;
+}
+.feature-2 .feature-image-box {
+  /* background-image: url("images/featrue1.png"); */
+  background-color: yellow;
+  border-radius: 2.4rem;
+  width: 40rem;
+  height: 40rem;
+  background-size: cover;
+}
+.feature-1::before {
+  content: "";
+  width: 16rem;
+  height: 16rem;
+  border: 3.8rem solid var(--mainColorShade);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  left: 0;
+  transform: translate(-40%, 25%);
+}
+.feature-2::before {
+  content: "";
+  width: 16rem;
+  height: 16rem;
+  border: 3.8rem solid var(--mainColorShade);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -10;
+  bottom: 0;
+  right: 0;
+  transform: translate(35%, 35%);
+}
+
+.feature {
+  display: flex;
+  justify-content: space-between;
+  gap: 7.2rem;
+  align-items: center;
+  position: relative;
+}
+.feature-text-box {
+  width: 55%;
+  justify-self: start;
+}
+.feature-text {
+  color: var(--gray2);
+  font-size: 1.8rem;
+  line-height: 3rem;
+  margin: 1.8rem 0;
+}
+
+.align-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-115%, -75%);
+}
+.align-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(115%, -75%);
+}
+
+/* ========================================= */
+/* =========== Bonus Section ============ */
+/* ========================================= */
+.section-bonus {
+  height: 50vh;
+  background-color: wheat;
+  text-align: center;
+}
+/* ========================================= */
+/* =========== Footer Section ============ */
+/* ========================================= */
+footer {
+  background-color: #0b0d17;
+  color: white;
+  text-align: center;
+  padding: 3.2rem 0rem;
+}
+footer h3 {
+  font-family: "Lobster", cursive;
+  font-weight: 400;
+  line-height: 4.4rem;
+  font-size: 3.6rem;
+}
+
+footer p {
+  font-family: "Manrope", sans-serif;
+  line-height: 2.4rem;
+  color: #d9dbe1;
+  font-size: 1.4rem;
+  margin-top: 1.8rem;
+}
