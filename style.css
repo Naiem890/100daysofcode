@@ -197,7 +197,7 @@ h4 {
   flex-direction: row-reverse;
 }
 .feature-1 .feature-image-box {
-  background-image: url("images/feature1.png");
+  background-image: url("images/feature1.webp");
   /* background-color: yellow; */
   border-radius: 2.4rem;
   width: 40rem;
@@ -205,7 +205,7 @@ h4 {
   background-size: cover;
 }
 .feature-2 .feature-image-box {
-  background-image: url("images/feature2.png");
+  background-image: url("images/feature2.webp");
   /* background-color: yellow; */
   border-radius: 2.4rem;
   width: 40rem;
