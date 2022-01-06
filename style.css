@@ -173,7 +173,8 @@ h4 {
 /* ========================================= */
 
 .section-features {
-  margin: 8.6rem 0rem;
+  margin: 9.6rem 0rem;
+  margin-bottom: 15rem;
 }
 .section-features .container {
   display: flex;
@@ -185,16 +186,16 @@ h4 {
   flex-direction: row-reverse;
 }
 .feature-1 .feature-image-box {
-  /* background-image: url("images/featrue1.png"); */
-  background-color: yellow;
+  background-image: url("images/feature1.png");
+  /* background-color: yellow; */
   border-radius: 2.4rem;
   width: 40rem;
   height: 40rem;
   background-size: cover;
 }
 .feature-2 .feature-image-box {
-  /* background-image: url("images/featrue1.png"); */
-  background-color: yellow;
+  background-image: url("images/feature2.png");
+  /* background-color: yellow; */
   border-radius: 2.4rem;
   width: 40rem;
   height: 40rem;
@@ -267,6 +268,7 @@ h4 {
 /* ========================================= */
 /* =========== Footer Section ============ */
 /* ========================================= */
+
 footer {
   background-color: #0b0d17;
   color: white;
