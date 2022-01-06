@@ -141,6 +141,7 @@ h4 {
 
 .section-mission {
   margin-top: 4.8rem;
+  overflow: hidden;
 }
 .section-mission .container {
   margin-top: 4.8rem;
